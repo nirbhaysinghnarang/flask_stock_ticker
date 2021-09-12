@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stock Ticker Details </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <style media="screen">
+    *{
+      font-family: 'Urbanist', sans-serif;
+      color:goldenrod;
+    }
+    .main-wrapper{
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background-color:#00008b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    h1{
+      color:goldenrod;
+      margin:0 auto;
+    }
+
+    p{
+      color:goldenrod!important;
+      text-decoration:none!important;
+    }
+  </style>
+  <body>
+    <div class="main-wrapper">
+      <h1>ERROR!</h1>
+      <p> The ticker {{wrongTicker}} does not exist! </p>
+    </div>
+  </body>
+</html>

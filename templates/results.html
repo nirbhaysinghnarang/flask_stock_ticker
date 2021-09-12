@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stock Ticker Details </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <style media="screen">
+    *{
+      font-family: 'Urbanist', sans-serif;
+    }
+    .main-wrapper{
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background-color:#00008b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    h1,h3{
+      color:goldenrod;
+      margin:0 auto;
+    }
+    .fancy-hr{
+      width:15%;
+      color:goldenrod;
+    }
+    h3{
+      margin-bottom:20px!important;;
+    }
+    a{
+      color:goldenrod;
+      text-decoration:none!important;
+      margin-top:20px!important;;
+      font-style:italic;
+    }
+
+  </style>
+  <body>
+    <div class="main-wrapper">
+      <h1>{{TickerName}}</h1>
+      <hr class="fancy-hr">
+      <p style="color:goldenrod"> <i>Name</i>: {{name}} </p>
+      <p style="color:goldenrod"> <i>Sector</i>: {{sector}} </p>
+      <p style="color:goldenrod"> <i>Industry</i>: {{industry}} </p>
+      <p style="color:goldenrod"> <i>CEO</i>: {{ceo}} </p>
+      <p style="color:goldenrod"> <i>Market Cap</i>: {{m_cap}} USD </p>
+      <section class="news">
+        <h3 style="margin-top:50px;">{{relevant_news}}</h1>
+        <a href={{url_1}}> {{title_1}} </a>
+        <a href={{url_2}}> {{title_2}} </a>
+      </section>
+    </div>
+  </body>
+</html>

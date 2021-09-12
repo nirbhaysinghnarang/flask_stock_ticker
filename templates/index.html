@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Stock Ticker Details </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <style media="screen">
+    *{
+      font-family: 'Urbanist', sans-serif;
+      color:goldenrod;
+    }
+    .main-wrapper{
+      position:absolute;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background-color:#00008b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    h1{
+      color:goldenrod;
+      margin:0 auto;
+    }
+    .input-txt{
+      width:40%;
+      padding:10px;
+      margin:0 auto;
+      margin-top:20px;
+      border-radius: 10px;
+      border:1px solid goldenrod;
+    }
+    .input-txt:focus{
+      border:2px solid goldenrod;
+    }
+    .go-btn{
+      padding:20px;
+      background-color: goldenrod;
+      width: 20%;
+      margin:0 auto;
+      margin-top:20px;
+      border:none;
+      color:white;
+      transition:0.1s;
+      border-radius: 20px;
+    }
+    .go-btn:hover{
+      cursor:pointer;
+      transform: scale(1.1);
+      transition:0.1s;
+    }
+    p{
+      color:goldenrod!important;
+    }
+  </style>
+  <body>
+    <div class="main-wrapper">
+      <h1>Enter a ticker below</h1>
+        <form method='post'>
+          <input type='text' class='input-txt' name="ticker"> </input>
+          <button class='go-btn' value="submit" type="submit"> Go </button>
+      </form>
+    </div>
+  </body>
+</html>
